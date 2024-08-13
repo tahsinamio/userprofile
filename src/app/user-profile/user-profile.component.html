@@ -1,0 +1,28 @@
+<div class="user-profile">
+  <h1>Welcome, {{name || 'Guest'}}!</h1>
+  <div>
+    <div class="input-group">
+      <label for="name">Name</label>
+      <input type="text" id="name" placeholder="Enter your name" [(ngModel)]="name" />
+    </div>
+    <div class="input-group">
+      <label for="email">Email</label>
+      <input type="text" id="email" placeholder="Enter your email" [(ngModel)]="email" />
+    </div>
+    <div class="input-group">
+      <label for="bio">Bio</label>
+      <input type="text" id="bio" placeholder="Enter your bio" [(ngModel)]="bio" />
+    </div>
+    <div class="profile-preview">
+      <h3>Profile Preview:</h3>
+      <p>Name: {{name || 'N/A'}}</p>
+      <p>Email: {{email || 'N/A'}}</p>
+      <p>Bio: {{bio || 'N/A'}}</p>
+    </div>
+    <div class="button-group">
+      <button class="reset-button" (click)="reset()" [disabled]="areAllFieldsEmpty()">Reset</button>
+      <button class="save-button" (click)="save()">Save</button>
+    </div>
+    <p class="save-count">Save count: {{counter}}</p>
+  </div>
+</div>

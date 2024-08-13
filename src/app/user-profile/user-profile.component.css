@@ -1,0 +1,77 @@
+.user-profile {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.user-profile h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.profile-preview {
+  margin-top: 20px;
+}
+
+.profile-preview h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.button-group button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.reset-button {
+  background-color: #1a1a2e;
+  color: white;
+}
+
+.button-group button.reset-button:disabled {
+  background-color: #a0a0a0;
+  color: white;
+  cursor: not-allowed;
+}
+
+.save-button {
+  background-color: #1a1a2e;
+  color: white;
+}
+
+.save-count {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 14px;
+}
